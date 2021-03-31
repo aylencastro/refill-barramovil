@@ -1,18 +1,17 @@
 <?php
   define("TITLE", "Vodkaholic! | Barra Móvil");
   include('includes/head.php');
-  include('includes/main.php');
 
   $name = $email = $msg = "";
 
   //Medida de seguridad/Precaución n°1: que el nombre contenga números y letras nada más
   function securityName($str)
   {
-      return preg_match("/^[a-zA-Z]*$/", $str);
+    return preg_match("/^[a-zA-Z]*$/", $str);
   } 
 
   //función que limpia/emprolija
-  function limpiado($data)
+  function clean($data)
   {
       $data = ucfirst($data);
       $data = trim($data);
@@ -45,7 +44,7 @@
     }
   }
 
-  //Chequear que estén todos los campos no-vacíos
+  //Chequear que estén todos los campos no-vacíos (Aunque esto en teoría se chequea también desde el HTML)
   // (ELSE) Si está toda la info, entonces se guarda en la variable sin espacios en blanco
   if (empty($_GET['name'])) 
     {
@@ -53,7 +52,7 @@
       include('includes/alerts/error-empty.php');
     } 
     else{
-      $name = limpiado($_GET['name']);
+      $name = clean($_GET['name']);
     }
     
   if (empty($_GET['email']))
@@ -82,20 +81,20 @@
         die;
       }
 
-          //A quién se envía el form (HAY QUE MODIFICAR ESTO CON EL MAIL QUE CORRESPONDA)
-          $to = "vodkaholic.barramovil@gmail.com";
+          //A quién se envía el form
+          $to = "vodkaholicbm@gmail.com";
 
           //Agregar subject al email
           $subject = "[VODKAHOLIC!-BARRA MÓVIL] " . $name . " te ha enviado una consulta.";
 
           //Mensaje/Email 
-          $mensaje .= "Nombre: " . $name ."\r\n";
+          $mensaje = "Nombre: " . $name ."\r\n";
           $mensaje .= "Email: " . $email . "\r\n";
           $mensaje .= "Consulta: \r\n " . $msg;
           $mensaje = wordwrap($mensaje, 75); //Emprolija mensaje en 75 caracteres por línea
 
-          //Poner header del mail en una variable (ACTUALIZAR EL FROM)
-          $header = "From: vodkaholic@vodkaholic-barramovil.com\nReply-To: " . $name ."<". $email .">\n";
+          //Poner header del mail en una variable (AQUÍ DEBERÍA IR EL MAIL CORRECTO)
+          $header = "From: vodkaholicbm@gmail.com\nReply-To: " . $name ."<". $email .">\n";
           $header .= "Mime-Version: 1.0\n";
           $header .= "Content-Type: text/plain";
           
@@ -104,13 +103,6 @@
                 
           // SUCCESS. Gracias por contactarse con nosotros! 
           include('includes/alerts/success.php');
-
-?>
-        <script>
-          form.contact-submit.disabled = true;
-          return true;
-          document.getElementById("contact-form").reset();
-        </script>
-<?php        
+       
   }
 ?>

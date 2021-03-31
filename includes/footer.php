@@ -10,7 +10,7 @@
         <div class="footer-info">
             <h3>CONTACTO</h3>
             <span><img src="./icon/iconfinder_mobile_2431356.png" alt="" class="footer-contacto"><p> &nbsp;  +54911...... </p></span>  <!-- Teléfono -->
-            <span><img src="./icon/iconfinder_mail_1055030.png" alt="" class="footer-contacto"><p> &nbsp; vodkaholic@mailfalso.com</p></span>  <!-- Mail -->
+            <span><img src="./icon/iconfinder_mail_1055030.png" alt="" class="footer-contacto"><p> &nbsp; vodkaholicbm@gmail.com</p></span>  <!-- Mail -->
             <span><img src="./icon/iconfinder_Flag_2376767.png" alt="" class="footer-contacto"><p>&nbsp; Buenos Aires - Argentina</p></span>  <!-- Locación -->
         </div>     
     </footer>

@@ -8,21 +8,26 @@
     margin-bottom: 0;
     color: rgb(104, 17, 17);
     text-shadow: black 1px 1px;
+    font-family: 'Tenor Sans', sans-serif;
+    width: 95%;
 }
 
 .success h1{
     color: rgb(42, 88, 20);
     text-shadow: black 1px 1px;
     margin-bottom: 0;
+    font-family: 'Tenor Sans', sans-serif;
+    width: 95%;
 }
 
 .button-form{
     color: #E6E6E9;
     background-color: #03062B;
-    width: 15rem;
-    height: 5rem;
+    width: 13rem;
+    height: 3rem;
     border-radius: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Kaushan Script', cursive;;
 }
 
 .button-form:hover{
