@@ -1,32 +1,31 @@
 <?php
-    define("TITLE", "Home - Vodkaholic! | Barra Móvil");
+    define("TITLE", "Inicio - Vodkaholic! | Barra Móvil");
     include('includes/head.php');
 ?>
 
 <div id="body-loaded">
-    <div class="contact-icon consult"><a href="#formulario"><img src="./img/contact/chat.png"></a></div>
-    <div class="contact-icon wp"><a href="#formulario"><img src="./img/contact/iconfinder_whatsapp_287615.png"></a></div> <!--  habría que cambiar la función del icono de whatsapp como para que envíe un msj  -->
+    <div class="wp"><a href="#formulario"><img src="./img/contact/iconfinder_whatsapp_287615.png"></a></div> <!--  habría que cambiar la función del icono de whatsapp como para que envíe un msj  -->
 
-    <header>
+    <header id="header">
         <!-- header desktop -->
-        <div id="header_desktop">
-            <div id="logo1"></div>
-            <nav>
+        <div id="header_desktop" class="headers">
+            <div class="logo1 logos"></div>
+            <nav class="center">
                 <?php include('includes/nav.php'); ?>
             </nav>
         </div>
 
         <!-- header mobile -->
-        <div id="header_mobile">
-           <div id="menu_icon" onclick="openNav()"><img src="./icon/menu.png" alt=""></div>
-        <div><h1>Vodkaholic! </h1></div><div><h3> Barra Móvil</h3></div>
-        <div id="logo3"></div>
-        <div id="mySidenav" class="sidenav">
-            <nav>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <?php include('includes/nav.php'); ?>
-            </nav>
-        </div> 
+        <div id="header_mobile" class="headers">
+           <div class="center" id="menu_icon" onclick="openNav()"><img src="./icon/menu.png" alt=""></div>
+            <div class="center" style="display: flex; justify-content:center;"><h1>Vodkaholic!</h1><h3>&nbsp;Barra Móvil</h3></div>
+            <div class="logo3 logos center"></div>
+            <div id="mySidenav" class="sidenav">
+                <nav>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <?php include('includes/nav.php'); ?>
+                </nav>
+            </div> 
         </div>
     </header>
 
@@ -40,14 +39,13 @@
                     <h2>Quiénes Somos</h2>
                     <p>Somos un emprendimiento moderno dedicado a satisfacer las necesidades de tu evento con <em>la mejor onda</em>. Personalizamos cada servicio a la medida de lo que nuestros clientes necesitan, con el fin de que sus invitados disfruten de una fiesta inolvidable.</p>
                 </div>
-                <div class="logo2"></div>
+                <div class="logo2 logos center"></div>
                 <div class="us">
-                    <h2>Nuestra Historia</h2>
+                    <h2 style="text-align: end;">Nuestra Historia</h2>
                     <p>En nuestra familia, la elaboración y disfrute de los alimentos y bebidas siempre tuvieron un papel fundamental. Desde pequeños, nuestros padres nos cultivaron el placer por los sabores. Y así fue como la curiosidad nos llevó a estudiar el arte de preparar tragos.
                     </p>
                 </div>
             </div>    
-             
         </section>
 
         <section id="servicios">
@@ -73,22 +71,19 @@
                 <div id="plus">
                     <h2>¿Qué más te ofrecemos?</h2>
                     <p>Brindamos equipamiento completo para la elaboración de los tragos, bartenders profesionales, servicio de cristalería, descartables y todo lo que necesites para que tu evento sea ideal.</p>
-                    <br>
                     <p>Nuestro servicio ofrece dos modalidades de contratación a coordinar:</p>
                     <ul>
-                        <li>Barra Libre: <em>¡Consumís lo que querés!</em></li>
-                        <li>Cóctails Fijos: <em>Podés elegir la cantidad de tragos que tu evento requiera.</em></li>
-                        <li>Sólo barmans: <em>Vos mismo podés proporcionar las bebidas y nosotros te preparamos los cócteles que desees.</em></li>
+                        <li><em>Barra Libre:</em> ¡Consumís lo que querés!</li>
+                        <li><em>Cóctails Fijos:</em> Podés elegir la cantidad de tragos que tu evento requiera.</li>
+                        <li><em>Sólo barmans:</em> Vos mismo podés proporcionar las bebidas y nosotros te preparamos los cócteles que desees.</li>
                     </ul>
                     <br>
                     <hr>
                     <div class="center"><strong>¡HACEMOS EL EVENTO A TU MEDIDA!</strong> <em>¡No dudes en consultarnos!</em></div>
                     <br>
                     <p class="center">Armamos un presupuesto personalizado de acuerdo a lo que necesites. Los servicios son combinables.</p>
-                    
                 </div>
             </div>
-            
         </section>
 
         <section id="fotos">
@@ -110,26 +105,25 @@
                 <div class="pics_drink no-show"><div class="name"><p>Trago de Autor 3</p></div></div>
                 <div class="pics_drink no-show"><div class="name"><p>Trago de Autor 4</p></div></div>
             </div>
-           
         </section>
 
         <section id="formulario">
-            <h1>¡Contanos lo que buscás y nosotros te enviaremos un presupuesto de acuerdo a tus necesidades!</h1>
+            <h1 class="center">¡Contanos lo que buscás y nosotros te enviaremos un presupuesto de acuerdo a tus necesidades!</h1>
 
             <form action="form.php" method="get" id="contact-form">
 
-                <label for="name">Nombre y Apellido: </label><input type="text" name="name" id="name-form" requested placeholder="Natalia Natalia" minlength="4" spellcheck="false"><br> <!-- Nombres -->
+                <label for="name">Nombre y Apellido: </label><input type="text" name="name" id="name-form" requested placeholder="Natalia Natalia" minlength="4" spellcheck="false"> <!-- Nombres -->
 
-                <label for="email">Email: </label><input type="email" name="email" id="email-form" requested placeholder="ejemplo@mail.com" spellcheck="false"><br> <!-- Email -->
+                <label for="email">Email: </label><input type="email" name="email" id="email-form" requested placeholder="ejemplo@mail.com" spellcheck="false"> <!-- Email -->
 
-                <label for="msg">Consulta: </label><textarea type="text" name="msg" id="msg-form" requested placeholder="Escribinos aquí qué tipo de servicio buscás." minlength="10" spellcheck="false"></textarea><br> <!-- Consulta -->
+                <label for="msg">Consulta: </label><textarea type="text" name="msg" id="msg-form" requested placeholder="Escribinos aquí qué tipo de servicio buscás." minlength="10" spellcheck="false"></textarea> <!-- Consulta -->
 
                 <input type="submit" name="contact-submit" value="Enviar" id="boton-enviar"> <!-- Botón ENVIAR -->
 
             </form>
             
             <div id="deco">
-                <div class="logo2 abajo"></div>
+                <div class="logo2 logos" id="abajo"></div>
                 <div class="drinks-icons"><img src="icon/iconfinder_8_1845729.png" alt=""><img src="icon/iconfinder_12_1845732.png" alt=""></div>
             </div>    
         </section>
