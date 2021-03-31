@@ -4,7 +4,7 @@
             <br>
             <a href="index.php"><input type="button" class="button-form" value="Página Principal"></a>
             <br>
-            <div class="logo2 form_logo"></div>
+            <div class="logo2 logos form_logo"></div>
         </div>
     </section>
 
