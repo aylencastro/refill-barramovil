@@ -1,0 +1,43 @@
+#nosotros{
+    height: 50rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.title-first{
+    margin-top: -1rem!important; 
+}
+
+.display_us{height: 90%;}
+
+.us{
+    margin: auto;
+    width: 100%;
+    color: black;
+    height: 30%;
+}
+
+.us h2{
+    color: #66666E;
+    font-family: 'Dancing Script', cursive; 
+    text-shadow: black 1px 1px;
+    font-size: 1.6rem;
+}
+
+
+@media screen and (min-width: 768px){
+    #nosotros{
+        height: 27rem;
+        margin-top: 4rem;
+    }
+
+    .us{
+        height: auto;
+        width: 30%;
+    }
+
+    .us h2{
+        font-size: 2.9vh;
+        text-shadow: black 1.45px 1.45px;
+    }
+}

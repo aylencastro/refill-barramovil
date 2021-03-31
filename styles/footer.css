@@ -1,0 +1,57 @@
+footer{
+    height: 25rem;
+    background-color: #E6E6E9;
+    width: 100%;
+    bottom: 0;
+    color: #03062B;
+    display: flex;
+    flex-flow: column;
+}
+
+.footer-info{
+    margin: 0 auto;
+    width: 90%;
+    height: 45%;
+    justify-content: flex-start;
+}
+
+.footer-info span, .footer-info span a{
+    display: inline-flex;
+    width: 100%;
+}
+
+.footer-contacto{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footer-contacto a:hover{
+    text-shadow: none;
+}
+
+footer p{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1rem;
+}
+
+footer h3{
+    font-family: 'Kaushan Script', cursive;
+    margin: 0.5rem auto;
+}
+
+
+@media screen and (min-width: 768px){ 
+    footer{
+        flex-flow: row;
+        height: 14rem;
+        justify-content: space-around;
+    }
+
+    .footer-info{
+    margin: 0;
+    width: 40%;
+    height: 85%;
+    }
+}
+
+

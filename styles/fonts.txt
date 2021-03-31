@@ -1,0 +1,8 @@
+DIFERENTES FUENTES USADAS (API GOOGLE FONTS):
+font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'BenchNine', sans-serif;
+font-family: 'Advent Pro', sans-serif;
+font-family: 'Pragati Narrow', sans-serif;
+font-family: 'Merienda', cursive; 
+font-family: 'Tenor Sans', sans-serif;

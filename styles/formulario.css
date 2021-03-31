@@ -1,0 +1,97 @@
+#formulario{
+    height: 50rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#formulario h1{
+    color: #66666E;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.9rem;
+    text-shadow: #03062B 1.45px 1.45px;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+#contact-form{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+#contact-form input, #contact-form textarea{
+    min-height: 2.5rem;
+    border: 1px solid #03062B;
+    box-shadow: #66666e 0px 0px 1vw;
+    -moz-box-shadow: #66666e 0px 0px 1vw;
+    -webkit-box-shadow: #66666e 0px 0px 1vw;
+    font-family: 'Tenor Sans', sans-serif;
+    padding: 0.5rem;
+    margin-bottom: 2vh;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+#contact-form textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 4.5rem;
+}
+
+#contact-form label{
+   color: #03062B;
+   margin-top: 0.5rem;
+}
+
+#boton-enviar{
+    color: #E6E6E9;
+    background-color: #03062B;
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem auto;
+    border-radius: 30px;
+    font-size: 1.3rem;
+}
+
+#deco{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#abajo{
+    height: 10rem;
+    width: 15rem;
+    margin-top: 0;
+}
+
+.drinks-icons img{
+    width: 5rem;   
+    padding-top: 3rem;
+}
+
+.drinks-icons{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px){
+    #formulario{
+        height: 45rem;
+        margin-top: 4rem;
+    }
+
+    .drinks-icons{
+        display: block;
+    }
+
+    #contact-form{
+        width: 60%;
+        margin: auto;
+    }
+}

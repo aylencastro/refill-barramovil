@@ -1,0 +1,12 @@
+.wp{
+    position: fixed;
+    left: 0.5rem;
+    transition: left 0.7s;
+    top: 70%;
+    z-index: 3;
+}
+
+.wp img{
+    height: 4rem;
+    width: 4rem;
+}

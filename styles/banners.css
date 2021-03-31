@@ -1,0 +1,22 @@
+.banner{
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.banner_1{
+    background-image: url("../img/banner/barra1.jpg");
+}
+
+.banner_2{
+    background-image: url("../img/banner/barra2.png");
+}
+
+@media screen and (min-width: 768px){ 
+    .banner{
+        height: 35rem;
+        background-attachment: fixed;
+    }
+}

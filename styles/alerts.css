@@ -1,0 +1,30 @@
+.alerts{
+    height: 100%;
+    width: 100%; 
+    text-align: center;
+}
+
+.error h1{
+    margin-bottom: 0;
+    color: rgb(104, 17, 17);
+    text-shadow: black 1px 1px;
+}
+
+.success h1{
+    color: rgb(42, 88, 20);
+    text-shadow: black 1px 1px;
+    margin-bottom: 0;
+}
+
+.button-form{
+    color: #E6E6E9;
+    background-color: #03062B;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+.button-form:hover{
+    background-color: rgb(8, 11, 63);
+}

@@ -1,0 +1,31 @@
+.logos{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.logo1{
+    margin: auto 2rem;
+    height: 5rem;
+    width: 12rem;
+    background-image: url("../img/logo/Vodkaholic2_transparent.png");
+}
+
+.logo2{
+    height: 15rem;
+    width: 15rem;
+    background-image: url("../img/logo/Vodkaholic_transparent.png");
+}
+
+.logo3{
+    height: 4rem;
+    width: 5rem;
+    background-image: url("../img/logo/Vodk_transp.png");
+}
+
+.form_logo{
+    height: 12rem;
+    width: 15rem;
+    background-size: contain;
+    margin: 2rem auto;
+}

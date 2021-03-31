@@ -1,0 +1,137 @@
+header{
+    color: #03062B;
+    height: 5rem;
+    background-color: #9999A1;
+    position: sticky;
+    z-index: 3;
+    transition: top 0.6s;
+    font-size: 1rem;
+    top: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#header_desktop{display: none;}
+
+#header_mobile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.headers{
+    height: inherit;
+    font-weight: 900;
+    width: inherit;
+    flex-wrap: nowrap;
+}
+
+#menu_icon{
+    height: 3rem;
+    margin: auto;
+}
+
+#menu_icon img{
+    height: 100%;
+}
+
+#header_mobile h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.8rem;
+    width: 60%;
+}
+
+#header_mobile h3{
+    font-family: 'Merienda', cursive;
+    font-size: 0.85rem;
+    margin: 2.4rem auto;
+    width: 60%;
+}
+
+#header_mobile nav ul li{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.sidenav{
+    height: calc(100% - 5rem); 
+    width: 0;
+    position: fixed; 
+    z-index: 3; 
+    top: 5rem; 
+    left: 0;
+    background-color: #66666e;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 2rem; 
+    transition: 0.5s; 
+}
+
+#header_mobile nav ul{list-style-type: none;}
+
+.sidenav a {
+    padding: 8px 8px 8px 0;
+    font-size: 1rem;
+    color: #03062B;
+    text-shadow: #03062B 1px 1px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+#header_mobile nav{
+    width: 90%;
+    margin: auto;
+}
+
+#header_mobile nav ul{
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.sidenav a{
+    padding: 0.3rem 0;
+    font-size: 1.5rem;
+    color: #03062B;
+    text-shadow: #03062B 1px 1px;
+    display: block;
+    transition: 0.4s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -0.5rem;
+    right: 0.5rem;
+    font-size: 3rem;
+}
+
+
+@media screen and (min-width: 992px){ 
+    #header_desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header_mobile{display: none;}
+
+    #header_desktop nav{
+        width: 70%;
+        height: inherit;
+        margin-right: 2rem;
+    }
+
+    #header_desktop nav ul{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row;
+        list-style-type: none;
+        font-family: 'Merienda', cursive;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+}

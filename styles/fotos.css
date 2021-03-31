@@ -1,0 +1,127 @@
+#fotos{
+    height: 88rem;
+    margin-top: 1rem;
+}
+
+#events{
+    margin: 0 auto 1.5rem;
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#events h3, #drinks h3 {
+    width: 100%;
+    text-align: left;
+    color: #66666E;
+    font-size: 1.7rem;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #03062B 1.45px 1.45px;
+    margin: 0 auto 1rem;
+}
+
+.pics_event{
+    height: 40%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/events/event1.jpg");
+}
+
+.pics_event:nth-child(2){
+    background-image: url("../img/events/event2.jpg");
+}
+.pics_event:nth-child(3){
+    background-image: url("../img/events/event3.png");
+}
+.pics_event:nth-child(4){
+    background-image: url("../img/events/event4.jpg");
+}
+.pics_event:nth-child(5){
+    background-image: url("../img/events/event5.jpg");
+}
+.pics_event:nth-child(6){
+    background-image: url("../img/events/event6.jpg");
+}
+
+#drinks{
+    height: 40rem;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+    float: left;
+}
+
+.pics_drink{
+    height: 40%;
+    width: 80%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/drinks/drink1.png");
+}
+
+.pics_drink:nth-child(2){
+    background-image: url("../img/drinks/drink2.png");
+}
+.pics_drink:nth-child(3){
+    background-image: url("../img/drinks/drink3.jpg");
+}
+.pics_drink:nth-child(4){
+    background-image: url("../img/drinks/drink4.jpg");
+}
+
+.name{
+    width: 100%;
+    bottom: 0;
+    opacity: 0.5;
+    background-color: #66666E;
+    height: 15%;
+    z-index: 1;
+    position: absolute;
+    justify-items: center;
+}
+
+.name p{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #E6E6E9;
+    text-shadow: black 1.45px 1.45px;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.no-show{display: none;}
+
+@media screen and (min-width: 768px){
+    .no-show{display: block;}
+
+    #fotos{height: 58rem;}
+
+    #events{
+        height: 30rem;
+        justify-content: space-evenly;
+    }
+
+    .pics_event{
+        height: 40%;
+        width: 30%;
+    } 
+
+    #drinks{
+        height: 18rem;
+        justify-content: space-evenly;
+    }
+
+    .pics_drink{
+        height: 90%;
+        width: 20%;
+    }
+}
